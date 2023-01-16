@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMGROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <a class="nav__a" href="#section1">Види перевезень</a>
+                    <a class="nav__a" href="#section5">Митно-брокерські послуги</a>
+                    <a class="nav__a" href="#section7">Наші переваги</a>
+                    <a class="nav__a" href="#section8">Відгуки</a>
+                    <a class="nav__a" href="#section9">Фотогалерея</a>
+                </div>
+
+
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="openMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li><a class="nav__a" href="#section1">Види перевезень</a></li>
+                        <li><a class="nav__a" href="#section5">Митно-брокерські послуги</a></li>
+                        <li><a class="nav__a" href="#section7">Наші переваги</a></li>
+                        <li><a class="nav__a" href="#section8">Відгуки</a></li>
+                        <li><a class="nav__a" href="#section9">Фотогалерея</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="lang">
+                    <button class="button-lang--active">ua</button>
+                    <button class="button-lang">en</button>
+                </div>
+            </div>
+
+            <div class="header_center">
+                <div class="header_center__top">
+                    <div class="world-map"><img src="img/card.svg" alt=""></div>
+                    <div class="titles">
+                        <div class="title_h1" data-aos="fade-right">AMGROUP Co.Ltd</div>
+                        <div class="subtitle" data-aos="fade-right" data-aos-delay="200">
+                            міжнародні перевезення всіх категорій вантажів <br>
+                            по будь-яких напрямах
+                        </div>
+                    </div>
+                    <div class="bord" data-aos="fade-left" data-aos-delay="150">
+                        <img src="img/bord.png" alt="bord">
+                    </div>
+                </div>
+                <div class="header_center__center" data-aos="fade-up">
+                    <img src="img/main_img.png" alt="main_img">
+                </div>
+                <div class="social-media">
+                    <a class="social-media__a" href="tel:+380639690010"><img class="social-media__img"
+                            src="img/social-media/1.svg" alt="media"></a>
+                    <a class="social-media__a" href="tel:+380639690010"><img class="social-media__img"
+                            src="img/social-media/2.svg" alt="media"></a>
+
+                    <a class="social-media__a" href="tel:+380639690010"><img class="social-media__img"
+                            src="img/social-media/3.svg" alt="media"></a>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <div class="header_card" data-aos="flip-left">
+                    <div class="header_card__img">
+                        <img src="img/header-card/1.svg" alt="header-card">
+                    </div>
+                    <div class="header_card__title">
+                        Вантажні <br>
+                        авіаперевезення
+                    </div>
+                    <button class="button"><a class="button_a" href="#section1">детальніше</a></button>
+                    <div class="header_card__bg"></div>
+                </div>
+
+                <div class="header_card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="header_card__img">
+                        <img src="img/header-card/2.svg" alt="">
+                    </div>
+                    <div class="header_card__title">
+                        Чартерні <br>
+                        авіаційні <br>перевезення
+                    </div>
+                    <button class="button"><a class="button_a" href="#section2">детальніше</a></button>
+                    <div class="header_card__bg"></div>
+                </div>
+
+                <div class="header_card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="header_card__img">
+                        <img src="img/header-card/3.svg" alt="header-card">
+                    </div>
+                    <div class="header_card__title">Морські <br>перевезення</div>
+                    <button class="button"><a class="button_a" href="#section3">детальніше</a></button>
+                    <div class="header_card__bg"></div>
+                </div>
+
+                <div class="header_card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="header_card__img">
+                        <img src="img/header-card/4.svg" alt="header-card">
+                    </div>
+                    <div class="header_card__title">
+                        Автомобільні <br>
+                        перевезення<br>
+                        вантажів
+                    </div>
+                    <button class="button"><a class="button_a" href="#section4">детальніше</a></button>
+                    <div class="header_card__bg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section section-blue" id="section1">
+            <div class="container">
+                <div class="print"><img src="img/print.svg" alt="print"></div>
+                <div class="title" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Вантажні </span> авіаперевезення
+                </div>
+                <div class="section__img--blue">
+                    <img src="img/header-card/1.svg" alt="header-card">
+                </div>
+                <div class="wrapper-txt-section" data-aos="fade-up">
+                    <img src="img/1section/main.svg" alt="main">
+                </div>
+                <div class="img-section-bottom">
+                    <img src="img/1section/bord_main.svg" alt="bord_main">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section2">
+            <div class="section__img">
+                <img src="img/header-card/2.svg" alt="header-card">
+            </div>
+            <div class="container">
+                <div class="title title2" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Чартерні </span> авіаційні перевезення
+                </div>
+                <div class="section-list">
+                    <ul class="ul">
+                        <li class="li" data-aos="fade-right">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            стандартні автомобілі вантажністю до 22 тонн
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="50">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення негабаритних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="100">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення небезпечних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="150">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення вантажів, які потребують <br>
+                            дотримання особливого температурного <br>
+                            режиму
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="200">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            організація перевезень збірних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="250">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            страхування та забезпечення охорони
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="300">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            оформлення перевізних документів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="350">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            доставка вантажів під митним контролем
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-blue" id="section3">
+            <div class="container">
+                <div class="title" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Морські </span> перевезення
+                </div>
+                <div class="section__img--blue">
+                    <img src="img/3section/1.svg" alt="3section">
+                </div>
+                <div class="wrapper-txt-section" data-aos="fade-up">
+                    <img src="img/1section/main.svg" alt="1section">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section4">
+            <div class="section__img section__img--22"><img src="img/track.svg" alt="track"></div>
+            <div class="container">
+                <div class="title title2" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Автомобільні </span> перевезення вантажів
+                </div>
+                <div class="section-list">
+                    <ul class="ul">
+                        <li class="li" data-aos="fade-right" data-aos-delay="50">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            стандартні автомобілі вантажністю до 22 тонн
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="100">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення негабаритних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="150">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення небезпечних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="200">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            перевезення вантажів, які потребують <br>
+                            дотримання особливого температурного <br>
+                            режиму
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="250">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            організація перевезень збірних вантажів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="300">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            страхування та забезпечення охорони
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="350">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            оформлення перевізних документів
+                        </li>
+                        <li class="li" data-aos="fade-right" data-aos-delay="400">
+                            <div class="li_img"><img src="img/box.svg" alt="box"></div>
+                            доставка вантажів під митним контролем
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section4" id="section4">
+
+        </section>
+
+        <section class="section section5" id="section5">
+            <div class="section__img section__img-2 section__img-2323">
+                <img src="img/5section/dron.svg" alt="dron">
+            </div>
+
+            <div class="container">
+                <div class="title title2" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Митно-брокерські </span>послуги
+                </div>
+
+                <div class="blocks">
+                    <div class="block" data-aos="flip-left" data-aos-delay="50">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">визначення кодів <br>ТН ЗЕД</div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/1.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block2" data-aos="flip-left" data-aos-delay="100">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                розрахунок митної вартості та наступних митних платежів
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/2.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block3" data-aos="flip-left" data-aos-delay="150">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">оформлення необхідних документів</div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/3.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block4" data-aos="flip-left" data-aos-delay="200">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                надання послуг з реєстрації (або перереєстрації) учасника ЗЕД
+                                у відповідних державних органах
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/4.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block5">
+                        <div class="section__img2">
+                            <img src="img/5section/crane.svg" alt="crane">
+                        </div>
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                оформлення вантажів у митних режимах: експорт, імпорт,
+                                реімпорт, реекспорт, тимчасове ввезення/вивіз та інші
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/5.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocks blocks2">
+                    <div class="block" data-aos="flip-left" data-aos-delay="300">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                отримання дозволів та інших, необхідних для митного очищення,
+                                сертифікатів та документів;
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/6.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block2" data-aos="flip-left" data-aos-delay="350">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                надання консультативних послуг та експертних оцінок з метою
+                                оптимізації витрат клієнта, пов'язаних із декларуванням товару
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/7.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block3" data-aos="flip-left" data-aos-delay="400">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                подання та захист інтересів своїх замовників у різних органах
+                                з метою вирішення спірних питань та ін.
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/8.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block4" data-aos="flip-left" data-aos-delay="450">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                До оформлення приймаються вантажі, як фізичних, так і
+                                юридичних осіб з різними характеристиками: звичайні,
+                                великогабаритні, спеціальні, наливні, насипні та ін.
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/9.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block block5" data-aos="flip-left" data-aos-delay="500">
+                        <div class="holder">
+                            <img src="img/5section/holder.svg" alt="holder">
+                        </div>
+                        <div class="brick">
+                            <div class="brick__title">
+                                Митний брокер у Москві, Домодєдово, Шереметьєво
+                            </div>
+                            <div class="circles">
+                                <div class="circles__big">
+                                    <div class="circles__little">
+                                        <div class="circles__white">
+                                            <img src="img/5section/10.svg" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-section6">
+            <div class="container">
+                <div class="form-img">
+                    <div class="form-img__1">
+                        <img src="img/form/1.svg" alt="form-img">
+                    </div>
+                    <div class="form-img__2">
+                        <img src="img/form/2.svg" alt="form-img">
+                    </div>
+                </div>
+                <div class="title" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="title">
+                    </div>
+                    <span class="span">Залишити заявку</span>
+                </div>
+
+                <form action="" class="form">
+                    <div class="inbut-box" data-aos="fade-up" data-aos-delay="50">
+                        <div class="inbut-box__img">
+                            <img src="img/form/input1.svg" alt="input">
+                        </div>
+                        <input type="text" class="input" placeholder="І'мя">
+                    </div>
+                    <div class="inbut-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inbut-box__img">
+                            <img src="img/form/input2.svg" alt="input">
+                        </div>
+                        <input type="text" class="input" placeholder="Номер телефону">
+                    </div>
+                    <div class="capcha">
+
+                    </div>
+                    <div class="capchaError">
+
+                    </div>
+                    <button class="button button-form" data-aos="fade-up" data-aos-delay="150">замовити зворотній
+                        дзвінок </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section-section7" id="section7">
+            <div class="container">
+                <div class="title title2" data-aos="fade-left">
+                    <div class="title__img">
+                        <img src="img/geolocation.svg" alt="geo">
+                    </div>
+                    <span class="span">Наші переваги</span>
+                </div>
+                <div class="wrapper">
+                    <div class="wrapper_txt" data-aos="fade-up" data-aos-delay="50">
+                        <img src="img/7section/main.svg" alt="main">
+                    </div>
+                </div>
+        </section>
+
+        <section class="section section-section8" id="section8">
+            <div class="title title2" data-aos="fade-left">
+                <div class="title__img"><img src="img/geolocation.svg" alt="geo"></div>
+                <span class="span">Відгуки</span>
+            </div>
+
+
+
+
+
+            <div class="reviews-wrapper">
+                <div class="reviews-wrapper__txt">
+                    Amgroup працює на результат. Один із результатів - це наші
+                    задоволені клієнти. Познайомтеся з нашими постійними клієнтами. Вони
+                    довіряють нам, а значить ми все правильно робимо
+                </div>
+
+
+
+
+                <div class="reviews-wrapper__cards">
+                    <div class="reviews-card" data-aos="flip-left" data-aos-delay="50">
+                        <div class="reviews-card__photo">
+                            <img src="img/8section/1.png" alt="reviews">
+                        </div>
+                        <div class="reviews-card__name">Ганна Лисенко</div>
+                        <div class="reviews-card__position">бізнесменка</div>
+                        <div class="reviews-card__txt">
+                            <img src="img/8section/carbon1.svg" alt="carbon"> Я регулярно <br />
+                            співпрацюю тільки з <br />
+                            Amgroup. Довіряю <br />тільки їм
+                            <img src="img/8section/carbon.svg" alt="carbon">
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/instagram.svg" alt="instagram">hanna_lisenko
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/facebook.svg" alt="facebook">hanna_lisenko
+                        </div>
+                    </div>
+
+                    <div class="reviews-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="reviews-card__photo">
+                            <img src="img/8section/2.png" alt="reviews">
+                        </div>
+                        <div class="reviews-card__name">Антоніна Шляхтенко</div>
+                        <div class="reviews-card__position">митний брокер</div>
+                        <div class="reviews-card__txt">
+                            <img src="img/8section/carbon1.svg" alt="carbon"> Amgroup стали для
+                            <br>мене не тільки<br>
+                            партнерами, а й <br>друзями. Рекомендую<img src="img/8section/carbon.svg" alt="" />
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/instagram.svg" alt="instagram">anton_nina
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/facebook.svg" alt="facebook">anton_nina
+                        </div>
+                    </div>
+
+                    <div class="reviews-card" data-aos="flip-left" data-aos-delay="150">
+                        <div class="reviews-card__photo">
+                            <img src="img/8section/3.png" alt="reviews">
+                        </div>
+                        <div class="reviews-card__name">Анастасія Селиванова</div>
+                        <div class="reviews-card__position">бізнесменка</div>
+                        <div class="reviews-card__txt">
+                            <img src="img/8section/carbon1.svg" alt="carbon">Ціна і якість -
+                            топ. <img src="img/8section/carbon.svg" alt="carbon">
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/instagram.svg" alt="instagram" >nastia_n
+                        </div>
+                        <div class="reviews-card__link">
+                            <img src="img/8section/facebook.svg" alt="facebook">nastia_n
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section section-section9" id="section9">
+            <div class="title title2" data-aos="fade-left">
+                <div class="title__img"><img src="img/geolocation.svg" alt="geo"></div>
+                <span class="span">Фотогалерея</span>
+            </div>
+            <div class="grid-photo" data-aos="fade-up" data-aos-delay="50">
+                <div class="grid grid1" data-aos="flip-left" data-aos-delay="50"><img src="img/9section/1.png" alt="grid">
+                </div>
+                <div class="grid grid2" data-aos="flip-left" data-aos-delay="450"><img src="img/9section/2.png"
+                        alt="grid"></div>
+                <div class="grid grid3" data-aos="flip-left" data-aos-delay="350"><img src="img/9section/3.png"
+                        alt="grid"></div>
+                <div class="grid grid4" data-aos="flip-left" data-aos-delay="650"><img src="img/9section/4.png"
+                        alt="grid"></div>
+                <div class="grid grid5" data-aos="flip-left" data-aos-delay="150"><img src="img/9section/5.png"
+                        alt="grid"></div>
+                <div class="grid grid6" data-aos="flip-left" data-aos-delay="250"><img src="img/9section/6.png"
+                        alt="grid"></div>
+                <div class="grid grid7" data-aos="flip-left" data-aos-delay="550"><img src="img/9section/7.png"
+                        alt="grid"></div>
+                <div class="grid grid8" data-aos="flip-left" data-aos-delay="750"><img src="img/9section/8.png"
+                        alt="grid"></div>
+            </div>
+            <div class="grid-photo-mobile">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/9section/1.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/2.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/3.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/4.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/5.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/6.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/7.png" alt="slide"></div>
+                        <div class="swiper-slide"><img src="img/9section/8.png" alt="slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="logo logo-footer"><img src="img/logo.png" alt="logo"></div>
+                <div class="footer-wrapper">
+                    <div class="footer-column" data-aos="fade-up" data-aos-delay="50">
+                        <div class="footer-column__title">Контакти:</div>
+                        <div class="footer-column__p">
+                            <div class="footer-icon">
+                                <img src="img/footer/phone.svg" alt="phone">
+                            </div>
+                            <a class="footer__a" href="tel:+380639690010">+38 063 969 00 10</a>
+                        </div>
+                        <div class="footer-column__p">
+                            <div class="footer-icon">
+                                <img src="img/footer/whatsapp.svg" alt="whatsapp">
+                            </div>
+                            <a class="footer__a" href="whatsapp://+380444981751">+38 (044) 4981751</a>
+                        </div>
+                        <div class="footer-column__p">
+                            <div class="footer-icon">
+                                <img src="img/footer/telegram.svg" alt="telegram">
+                            </div>
+                            <a class="footer__a" href="telegram.me/+380444981751">+38 (044) 4981751</a>
+                        </div>
+                        <div class="footer-column__title footer-column__title2">
+                            Адреса:
+                        </div>
+                        <div class="footer-column__p">
+                            04128 м. Київ, вул. Туполєва, 54
+                        </div>
+                        <iframe class="iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.707561226232!2d30.3962163!3d50.4837877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd1bf2b5fa29%3A0x5cb2bbbc5263ef73!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCi0YPQv9C-0LvQtdCy0LAsIDU0LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1673379166140!5m2!1sru!2sua"
+                            width="400" height="250" style="border: 0; padding-top: 20px" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer-column__title">Розклад роботи:</div>
+                        <div class="footer-column__p">Пн: 10.00 - 17.00</div>
+                        <div class="footer-column__p">Вт: 10.00 - 17.00</div>
+                        <div class="footer-column__p">Ср: 10.00 - 17.00</div>
+                        <div class="footer-column__p">Чт: 10.00 - 17.00</div>
+                        <div class="footer-column__p">Пт: 10.00 - 17.00</div>
+                    </div>
+                    <div class="footer-column" data-aos="fade-up" data-aos-delay="150">
+                        <div class="footer-column__p footer-column__p2">
+                            <a class="footer__a" href="">Види перевезень</a>
+                        </div>
+                        <div class="footer-column__p footer-column__p2">
+                            <a class="footer__a" href="">Митно-брокерські послуги</a>
+                        </div>
+                        <div class="footer-column__p footer-column__p2">
+                            <a class="footer__a" href="">Наші переваги</a>
+                        </div>
+                        <div class="footer-column__p footer-column__p2">
+                            <a class="footer__a" href="">Відгуки</a>
+                        </div>
+                        <div class="footer-column__p footer-column__p2">
+                            <a class="footer__a" href="">Фотогалерея</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
